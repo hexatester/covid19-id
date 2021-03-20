@@ -12,7 +12,7 @@ class Update:
     penambahan: Penambahan
     harian: List[Harian]
     total: Total
-    _today: Optional[datetime] = None
+    _today: Optional[Harian] = None
 
     @property
     def today(self) -> Optional[Harian]:
