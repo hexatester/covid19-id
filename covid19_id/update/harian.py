@@ -2,7 +2,7 @@ import attr
 
 
 @attr.dataclass(slots=True)
-class HarianValue(int):
+class HarianValue:
     value: int
 
     def __get__(self, instance, owner):
@@ -14,11 +14,11 @@ class Harian:
     key_as_string: str
     key: int
     doc_count: int
-    jumlah_meninggal: HarianValue
-    jumlah_sembuh: HarianValue
-    jumlah_positif: HarianValue
-    jumlah_dirawat: HarianValue
-    jumlah_positif_kum: HarianValue
-    jumlah_sembuh_kum: HarianValue
-    jumlah_meninggal_kum: HarianValue
-    jumlah_dirawat_kum: HarianValue
+    jumlah_meninggal: int = attr.ib(converter=HarianValue)
+    jumlah_sembuh: int = attr.ib(converter=HarianValue)
+    jumlah_positif: int = attr.ib(converter=HarianValue)
+    jumlah_dirawat: int = attr.ib(converter=HarianValue)
+    jumlah_positif_kum: int = attr.ib(converter=HarianValue)
+    jumlah_sembuh_kum: int = attr.ib(converter=HarianValue)
+    jumlah_meninggal_kum: int = attr.ib(converter=HarianValue)
+    jumlah_dirawat_kum: int = attr.ib(converter=HarianValue)
