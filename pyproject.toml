@@ -9,7 +9,7 @@ license = "MIT"
 readme = "README.md"
 keywords = ["covid19", "indonesia"]
 classifiers=[
-    "Development Status :: 1 - Planning",
+    "Development Status :: 3 - Alpha",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
