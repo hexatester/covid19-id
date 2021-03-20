@@ -11,5 +11,4 @@ class DataProvinsi:
     current_data: int
     missing_data: int
     tanpa_provinsi: int
-    tanpa_provinsi: int
     list_data: List[Provinsi]
