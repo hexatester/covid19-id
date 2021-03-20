@@ -1,4 +1,8 @@
-from typing import TypeVar
+from typing import Generic, TypeVar
 
 
-ValueInt = TypeVar("ValueInt", bound=int)
+VInt = TypeVar("VInt", bound=int)
+
+
+class ValueInt(Generic[VInt]):
+    pass
