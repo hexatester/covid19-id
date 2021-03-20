@@ -1,11 +1,11 @@
-from .update_data import UpdateData
+from .data import Data
 from .penambahan import Penambahan
 from .harian import HarianValue, Harian
 from .total import Total
 
 
 __all__ = [
-    "UpdateData",
+    "Data",
     "Penambahan",
     "HarianValue",
     "Harian",

@@ -2,7 +2,7 @@ import attr
 
 
 @attr.dataclass(slots=True)
-class UpdateData:
+class Data:
     id: int
     jumlah_odp: int
     jumlah_pdp: int
