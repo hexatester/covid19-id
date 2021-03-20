@@ -30,7 +30,7 @@ def get_update(
 
 def get_prov(
     url: str = "https://data.covid19.go.id/public/api/prov.json",
-) -> UpdateCovid19:
+) -> DataProvinsi:
     data: str = ""
     headers = {"User-Agent": f"pypi.org/project/covid19-id/{__version__}"}
     req = Request(url=url, headers=headers)
