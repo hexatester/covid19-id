@@ -7,6 +7,7 @@ try:
 except ImportError:
     import json
 
+from . import UpdateCovid19
 from . import __version__
 
 
@@ -18,4 +19,4 @@ def get_update(
     req = Request(url=url, headers=headers)
     with urlopen(req) as response:
         data = response.read()
-    return structure(json.loads(data), Update)
+    return structure(json.loads(data), UpdateCovid19)
