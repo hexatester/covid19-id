@@ -7,6 +7,7 @@ from .update_covid19 import UpdateCovid19
 
 
 __all__ = [
+    "Data",
     "Penambahan",
     "Harian",
     "Total",
