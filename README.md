@@ -30,6 +30,13 @@ It will then be used for JSON decoding, which can bring speed up compared to the
 ```python
 import covid19_id
 
-all_update = get_update()
-print(all_update.update.today)
+all_update = covid19_id.get_update()
+
+total = all_update.update.total
+
+print(f"covid19; positive cases in Indonesia : {total.jumlah_positif}")
+print(f"covid19; patients treated in Indonesia {total.jumlah_dirawat}")
+print(f"covid19; patients recovered in Indonesia {total.jumlah_sembuh}")
+print(f"covid19; patients died in Indonesia {total.jumlah_meninggal}")
+
 ```
