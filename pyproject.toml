@@ -25,6 +25,7 @@ python = "^3.7"
 attrs = "^20.3.0"
 cattrs = "^1.3.0"
 ujson = {version = "^4.0.2", optional = true}
+python-dateutil = "^2.8.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
