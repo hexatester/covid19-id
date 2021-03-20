@@ -2,7 +2,7 @@ from covid19_id import __version__, get_update, get_prov, UpdateCovid19, DataPro
 
 
 def test_version():
-    assert __version__ == "0.2.0"
+    assert __version__ == "0.3.0"
 
 
 def test_update_covid19():

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "covid19-id"
-version = "0.2.0"
+version = "0.3.0"
 description = "Python module for getting data from covid19.go.id"
 authors = ["hexatester <hexatester@protonmail.com>"]
 homepage = "https://github.com/hexatester/covid19-id"
@@ -9,7 +9,7 @@ license = "MIT"
 readme = "README.md"
 keywords = ["covid19", "indonesia"]
 classifiers=[
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
