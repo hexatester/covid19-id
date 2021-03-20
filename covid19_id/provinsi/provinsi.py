@@ -12,7 +12,6 @@ class Provinsi:
     jumlah_sembuh: int
     jumlah_meninggal: int
     jumlah_dirawat: int
-    jenis_kelamin: int
     jenis_kelamin: List[JenisKelamin]
     kelompok_umur: List[KelompokUmur]
     lokasi: Lokasi
