@@ -1,4 +1,5 @@
 import attr
+from datetime import datetime
 
 
 @attr.dataclass(slots=True)
@@ -22,3 +23,7 @@ class Harian:
     jumlah_sembuh_kum: int = attr.ib(converter=HarianValue)
     jumlah_meninggal_kum: int = attr.ib(converter=HarianValue)
     jumlah_dirawat_kum: int = attr.ib(converter=HarianValue)
+
+    @property
+    def datetime(self) -> datetime:
+        return datetime.fromtimestamp(self.key)
