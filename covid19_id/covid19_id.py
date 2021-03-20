@@ -17,5 +17,5 @@ def get_update(
     headers = {"User-Agent": f"pypi.org/project/covid19-id/{__version__}"}
     req = Request(url=url, headers=headers)
     with urlopen(req) as response:
-        data = str(response.read())
+        data = response.read()
     return structure(json.loads(data), Update)
