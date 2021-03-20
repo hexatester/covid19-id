@@ -8,18 +8,16 @@ try:
 except ImportError:
     import json  # type: ignore[no-redef]
 
-from covid19_id.utils import ValueInt
+from covid19_id.utils import ValueInt, get_headers
 from . import UpdateCovid19
 from . import DataProvinsi
-from . import __version__
 
 
 def get_update(
     url: str = "https://data.covid19.go.id/public/api/update.json",
 ) -> UpdateCovid19:
     data: str = ""
-    headers = {"User-Agent": f"pypi.org/project/covid19-id/{__version__}"}
-    req = Request(url=url, headers=headers)
+    req = Request(url=url, headers=get_headers())
     cattr.register_structure_hook(date, lambda d, t: parse_datetime(d).date())
     cattr.register_structure_hook(datetime, lambda d, t: parse_datetime(d))
     cattr.register_structure_hook(ValueInt, lambda d, t: d["value"])
@@ -32,8 +30,7 @@ def get_prov(
     url: str = "https://data.covid19.go.id/public/api/prov.json",
 ) -> DataProvinsi:
     data: str = ""
-    headers = {"User-Agent": f"pypi.org/project/covid19-id/{__version__}"}
-    req = Request(url=url, headers=headers)
+    req = Request(url=url, headers=get_headers())
     cattr.register_structure_hook(date, lambda d, t: parse_datetime(d).date())
     cattr.register_structure_hook(datetime, lambda d, t: parse_datetime(d))
     cattr.register_structure_hook(ValueInt, lambda d, t: d["value"])
