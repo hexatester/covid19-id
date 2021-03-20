@@ -1,6 +1,7 @@
 import attr
 
 
+@attr.dataclass(slots=True)
 class UpdateData:
     id: int
     jumlah_odp: int
