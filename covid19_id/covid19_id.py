@@ -13,7 +13,7 @@ from . import __version__
 
 def get_update(
     url: str = "https://data.covid19.go.id/public/api/update.json",
-) -> Update:
+) -> UpdateCovid19:
     data: str = ""
     headers = {"User-Agent": f"pypi.org/project/covid19-id/{__version__}"}
     req = Request(url=url, headers=headers)
