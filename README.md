@@ -27,6 +27,8 @@ It will then be used for JSON decoding, which can bring speed up compared to the
 
 ## Example
 
+### Get Updates
+
 ```python
 import covid19_id
 
@@ -38,5 +40,27 @@ print(f"covid19; positive cases in Indonesia : {total.jumlah_positif}")
 print(f"covid19; patients treated in Indonesia {total.jumlah_dirawat}")
 print(f"covid19; patients recovered in Indonesia {total.jumlah_sembuh}")
 print(f"covid19; patients died in Indonesia {total.jumlah_meninggal}")
+
+```
+
+### Provinsi
+
+```python
+import covid19_id
+
+data_provinsi = covid19_id.get_prov()
+
+for provinsi in data_provinsi.list_data:
+    print(f"Province : {provinsi.key}")
+    print(f"Cases {provinsi.jumlah_kasus}")
+    print(f"Recovered {provinsi.jumlah_sembuh}")
+    print(f"Died {provinsi.jumlah_meninggal}")
+    for umur in provinsi.kelompok_umur:
+        print(f"Age {umur.key} : {umur.doc_count}")
+    penambahan = provinsi.penambahan
+    print(f"Additional Positive Cases {penambahan.positif}")
+    print(f"Additional Recovered {penambahan.sembuh}")
+    print(f"Additional Died {penambahan.meninggal}")
+    print("")
 
 ```
