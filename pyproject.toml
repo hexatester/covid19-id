@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "covid19-id"
+version = "0.1.0"
+description = "Python module for getting data from covid19.go.id"
+authors = ["hexatester <hexatester@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["covid19", "indonesia"]
+classifiers=[
+    "Development Status :: 1 - Planning",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
