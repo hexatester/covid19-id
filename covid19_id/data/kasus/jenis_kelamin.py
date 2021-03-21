@@ -1,5 +1,5 @@
 from . import BaseKasus
 
 
-class JenisKelamin(BaseKasus):
+class KasusJenisKelamin(BaseKasus):
     pass

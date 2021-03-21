@@ -1,5 +1,5 @@
 from . import BaseKasus
 
 
-class KelompokUmur(BaseKasus):
+class KasusKelompokUmur(BaseKasus):
     pass

@@ -1,5 +1,5 @@
 from . import BaseKasus
 
 
-class KondisiPenyerta(BaseKasus):
+class KasusKondisiPenyerta(BaseKasus):
     pass

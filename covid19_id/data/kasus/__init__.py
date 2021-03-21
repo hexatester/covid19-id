@@ -1,14 +1,14 @@
 from .base import BaseKasus
-from .kondisi_penyerta import KondisiPenyerta
-from .jenis_kelamin import JenisKelamin
-from .kelompok_umur import KelompokUmur
-from .gejala import Gejala
+from .kondisi_penyerta import KasusKondisiPenyerta
+from .jenis_kelamin import KasusJenisKelamin
+from .kelompok_umur import KasusKelompokUmur
+from .gejala import KasusGejala
 
 
 __all__ = [
     "BaseKasus",
-    "KondisiPenyerta",
-    "JenisKelamin",
-    "KelompokUmur",
-    "Gejala",
+    "KasusKondisiPenyerta",
+    "KasusJenisKelamin",
+    "KasusKelompokUmur",
+    "KasusGejala",
 ]
