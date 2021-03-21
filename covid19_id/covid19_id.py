@@ -1,6 +1,7 @@
 import cattr
 from datetime import date, datetime
 from dateutil.parser import parse as parse_datetime
+from typing import Any
 from urllib.request import urlopen, Request
 
 try:
@@ -13,27 +14,31 @@ from . import UpdateCovid19
 from . import DataProvinsi
 
 
+def _get_data(url: str, to_json: bool = True) -> Any:
+    data: Any = None
+    req = Request(url=url, headers=get_headers())
+    with urlopen(req) as response:
+        data = response.read()
+    if to_json:
+        return json.loads(data)
+    return data
+
+
 def get_update(
     url: str = "https://data.covid19.go.id/public/api/update.json",
 ) -> UpdateCovid19:
-    data: str = ""
-    req = Request(url=url, headers=get_headers())
     cattr.register_structure_hook(date, lambda d, t: parse_datetime(d).date())
     cattr.register_structure_hook(datetime, lambda d, t: parse_datetime(d))
     cattr.register_structure_hook(ValueInt, lambda d, t: d["value"])
-    with urlopen(req) as response:
-        data = response.read()
-    return cattr.structure(json.loads(data), UpdateCovid19)
+    data = _get_data(url)
+    return cattr.structure(data, UpdateCovid19)
 
 
 def get_prov(
     url: str = "https://data.covid19.go.id/public/api/prov.json",
 ) -> DataProvinsi:
-    data: str = ""
-    req = Request(url=url, headers=get_headers())
     cattr.register_structure_hook(date, lambda d, t: parse_datetime(d).date())
     cattr.register_structure_hook(datetime, lambda d, t: parse_datetime(d))
     cattr.register_structure_hook(ValueInt, lambda d, t: d["value"])
-    with urlopen(req) as response:
-        data = response.read()
-    return cattr.structure(json.loads(data), DataProvinsi)
+    data = _get_data(url)
+    return cattr.structure(data, DataProvinsi)
