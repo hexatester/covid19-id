@@ -31,6 +31,22 @@ It will then be used for JSON decoding, which can bring speed up compared to the
 
 ## Example
 
+### Get Data
+
+```python
+import covid19_id
+
+data = covid19_id.get_data()
+
+print("View symptom data")
+print(f"Recorded data {100-data.kasus.gejala.missing_data:.2f}%")
+print(f"Unrecorded data {data.kasus.gejala.missing_data:.2f}%")
+
+for gejala in data.kasus.gejala.list_data:
+    print(f"{gejala.doc_count:.2f}% with symptoms {gejala.key.capitalize()}")
+
+```
+
 ### Get Updates
 
 ```python

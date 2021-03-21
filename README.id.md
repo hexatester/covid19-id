@@ -29,6 +29,22 @@ Modul `ujson` tersebut akan digunakan untuk mendekode JSON, yang lebih cepat dib
 
 ## Contoh
 
+### Mendapat Data
+
+```python
+import covid19_id
+
+data = covid19_id.get_data()
+
+print("Melihat data gejala")
+print(f"Data yang sudah tercatat {100-data.kasus.gejala.missing_data:.2f}%")
+print(f"Data yang belum tercatat {data.kasus.gejala.missing_data:.2f}%")
+
+for gejala in data.kasus.gejala.list_data:
+    print(f"{gejala.doc_count:.2f}% dengan gejala {gejala.key.capitalize()}")
+
+```
+
 ### Mendapat Pembaruan
 
 ```python
