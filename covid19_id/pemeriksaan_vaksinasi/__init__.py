@@ -3,6 +3,7 @@ from .pemeriksaan_harian import PemeriksaanHarian
 from .total_pemeriksaan import TotalPemeriksaan
 from .pemeriksaan import Pemeriksaan
 from .penambahan_vaksinasi import PenambahanVaksinasi
+from .vaksinasi_harian import VaksinasiHarian
 
 
 __all__ = [
@@ -11,4 +12,5 @@ __all__ = [
     "TotalPemeriksaan",
     "Pemeriksaan",
     "PenambahanVaksinasi",
+    "VaksinasiHarian",
 ]
