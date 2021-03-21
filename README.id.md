@@ -17,7 +17,7 @@ Anda dapat menginstall atau mengupdate covid19-id dengan perintah:
 pip install covid19-id --upgrade
 ```
 
-## Dependensi Tambahn
+## Dependensi Tambahan
 
 covid19-id dapat diinstall dengan modul tambahan [ujson](https://pypi.org/project/ujson/ "ujson - PyPi").
 
