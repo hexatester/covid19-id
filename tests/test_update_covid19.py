@@ -1,5 +1,6 @@
-from covid19_id import get_update, UpdateCovid19
+from datetime import datetime
 
+from covid19_id import get_update, UpdateCovid19
 from covid19_id.update_covid19 import UpdateCovid19
 from covid19_id.update_covid19 import Harian
 
@@ -9,3 +10,7 @@ def test_update_covid19():
     assert isinstance(update, UpdateCovid19)
     if update.update.today:
         assert isinstance(update.update.today, Harian)
+    for harian in update.update.harian:
+        assert isinstance(harian, Harian)
+        assert isinstance(harian.datetime, datetime)
+        break
