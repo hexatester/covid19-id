@@ -20,7 +20,7 @@ pip install covid19-id --upgrade
 covid19-id can be installed with optional [ujson](https://pypi.org/project/ujson/ "ujson - PyPi") dependency.
 
 ```bash
-pip install covid19-id[ujson]`.
+pip install covid19-id[ujson]
 ```
 
 It will then be used for JSON decoding, which can bring speed up compared to the standard [json](https://docs.python.org/3/library/json.html "python json docs") library.
