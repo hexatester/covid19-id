@@ -3,6 +3,9 @@
 [![covid19-id - PyPi](https://img.shields.io/pypi/v/covid19-id)](https://pypi.org/project/covid19-id/)
 [![Supported Python versions](https://img.shields.io/pypi/pyversions/covid19-id)](https://pypi.org/project/covid19-id/)
 [![LICENSE](https://img.shields.io/github/license/hexatester/covid19-id)](https://github.com/hexatester/covid19-id/blob/main/LICENSE)
+[![codecov](https://codecov.io/gh/hexatester/covid19-id/branch/main/graph/badge.svg)](https://codecov.io/gh/hexatester/covid19-id)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+[![Mypy](https://img.shields.io/badge/Mypy-enabled-brightgreen)](https://github.com/python/mypy)
 
 Python module for getting data from covid19.go.id
 Modul python untuk mengambil data dari covid19.go.id
