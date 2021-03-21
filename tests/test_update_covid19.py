@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from covid19_id import get_update, UpdateCovid19
+from covid19_id import get_update
 from covid19_id.update_covid19 import UpdateCovid19
 from covid19_id.update_covid19 import Harian
 
