@@ -10,7 +10,7 @@ from covid19_id import (
 
 
 def test_version():
-    assert __version__ == "0.3.0"
+    assert __version__ == "0.4.0"
 
 
 def test_update_covid19():
