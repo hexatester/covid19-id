@@ -64,3 +64,18 @@ for provinsi in data_provinsi.list_data:
     print("")
 
 ```
+
+### Vaccinated
+
+```python
+import covid19_id
+
+
+pemeriksaan_vaksinasi = covid19_id.get_pemeriksaan_vaksinasi()
+
+vaksinasi_total = pemeriksaan_vaksinasi.vaksinasi.total
+
+print(f"vaccinated population (first one) {vaksinasi_total.jumlah_vaksinasi_1}")
+print(f"vaccinated population (second time) {vaksinasi_total.jumlah_vaksinasi_2}")
+
+```
