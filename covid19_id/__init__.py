@@ -6,13 +6,14 @@ from .data import Data
 from .covid19_id import get_update, get_prov, get_pemeriksaan_vaksinasi, get_data
 
 
+__author__ = "hexatester@protonmail.com"
 __all__ = [
-    "UpdateCovid19",
+    "Data",
     "DataProvinsi",
     "PemeriksaanVaksinasi",
-    "Data",
-    "get_update",
-    "get_prov",
-    "get_pemeriksaan_vaksinasi",
+    "UpdateCovid19",
     "get_data",
+    "get_pemeriksaan_vaksinasi",
+    "get_prov",
+    "get_update",
 ]
