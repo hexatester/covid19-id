@@ -9,7 +9,7 @@
 
 Python module for getting data from covid19.go.id
 
-[Readme Bahasa Indonesia](README.id.md)
+[Readme Bahasa Indonesia](https://github.com/hexatester/covid19-id/blob/main/README.id.md)
 
 ## Install
 
