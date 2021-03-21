@@ -3,6 +3,7 @@ from .kondisi_penyerta import MeninggalKondisiPenyerta
 from .jenis_kelamin import MeninggalJenisKelamin
 from .kelompok_umur import MeninggalKelompokUmur
 from .gejala import MeninggalGejala
+from .meninggal import Meninggal
 
 
 __all__ = [
@@ -11,4 +12,5 @@ __all__ = [
     "MeninggalJenisKelamin",
     "MeninggalKelompokUmur",
     "MeninggalGejala",
+    "Meninggal",
 ]
