@@ -8,7 +8,8 @@
 [![Mypy](https://img.shields.io/badge/Mypy-enabled-brightgreen)](https://github.com/python/mypy)
 
 Python module for getting data from covid19.go.id
-Modul python untuk mengambil data dari covid19.go.id
+
+[Readme Bahasa Indonesia](README.id.md)
 
 ## Install
 
