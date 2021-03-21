@@ -8,9 +8,9 @@ from .meninggal import Meninggal
 
 __all__ = [
     "BaseMeninggal",
-    "MeninggalKondisiPenyerta",
+    "Meninggal",
+    "MeninggalGejala",
     "MeninggalJenisKelamin",
     "MeninggalKelompokUmur",
-    "MeninggalGejala",
-    "Meninggal",
+    "MeninggalKondisiPenyerta",
 ]

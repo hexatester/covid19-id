@@ -8,9 +8,9 @@ from .kasus import Kasus
 
 __all__ = [
     "BaseKasus",
-    "KasusKondisiPenyerta",
+    "Kasus",
+    "KasusGejala",
     "KasusJenisKelamin",
     "KasusKelompokUmur",
-    "KasusGejala",
-    "Kasus",
+    "KasusKondisiPenyerta",
 ]

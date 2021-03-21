@@ -8,9 +8,9 @@ from .perawatan import Perawatan
 
 __all__ = [
     "BasePerawatan",
-    "PerawatanKondisiPenyerta",
+    "Perawatan",
+    "PerawatanGejala",
     "PerawatanJenisKelamin",
     "PerawatanKelompokUmur",
-    "PerawatanGejala",
-    "Perawatan",
+    "PerawatanKondisiPenyerta",
 ]

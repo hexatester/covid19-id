@@ -7,10 +7,10 @@ from .data_provinsi import DataProvinsi
 
 
 __all__ = [
+    "DataProvinsi",
     "JenisKelamin",
     "KelompokUmur",
     "Lokasi",
     "Penambahan",
     "Provinsi",
-    "DataProvinsi",
 ]

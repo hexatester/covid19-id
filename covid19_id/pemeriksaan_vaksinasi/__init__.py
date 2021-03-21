@@ -10,13 +10,13 @@ from .pemeriksaan_vaksinasi import PemeriksaanVaksinasi
 
 
 __all__ = [
-    "PenambahanPemeriksaan",
-    "PemeriksaanHarian",
-    "TotalPemeriksaan",
     "Pemeriksaan",
+    "PemeriksaanHarian",
+    "PemeriksaanVaksinasi",
+    "PenambahanPemeriksaan",
     "PenambahanVaksinasi",
-    "VaksinasiHarian",
+    "TotalPemeriksaan",
     "TotalVaksinasi",
     "Vaksinasi",
-    "PemeriksaanVaksinasi",
+    "VaksinasiHarian",
 ]

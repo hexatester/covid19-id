@@ -7,10 +7,10 @@ from .data import Data
 
 
 __all__ = [
+    "Data",
     "DataKeyDoc",
     "Kasus",
-    "Sembuh",
     "Meninggal",
     "Perawatan",
-    "Data",
+    "Sembuh",
 ]

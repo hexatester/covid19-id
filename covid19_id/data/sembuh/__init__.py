@@ -8,9 +8,9 @@ from .sembuh import Sembuh
 
 __all__ = [
     "BaseSembuh",
-    "SembuhKondisiPenyerta",
+    "Sembuh",
+    "SembuhGejala",
     "SembuhJenisKelamin",
     "SembuhKelompokUmur",
-    "SembuhGejala",
-    "Sembuh",
+    "SembuhKondisiPenyerta",
 ]
