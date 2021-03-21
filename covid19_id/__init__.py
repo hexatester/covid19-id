@@ -3,7 +3,7 @@ from .update_covid19 import UpdateCovid19
 from .provinsi import DataProvinsi
 from .pemeriksaan_vaksinasi import PemeriksaanVaksinasi
 from .data import Data
-from .covid19_id import get_update, get_prov, get_pemeriksaan_vaksinasi
+from .covid19_id import get_update, get_prov, get_pemeriksaan_vaksinasi, get_data
 
 
 __all__ = [
@@ -14,4 +14,5 @@ __all__ = [
     "get_update",
     "get_prov",
     "get_pemeriksaan_vaksinasi",
+    "get_data",
 ]

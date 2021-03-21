@@ -13,6 +13,7 @@ from covid19_id.utils import ValueInt, get_headers
 from . import UpdateCovid19
 from . import DataProvinsi
 from . import PemeriksaanVaksinasi
+from . import Data
 
 
 def _get_data(url: str, to_json: bool = True) -> Any:
@@ -53,3 +54,11 @@ def get_pemeriksaan_vaksinasi(
     cattr.register_structure_hook(ValueInt, lambda d, t: d["value"])
     data = _get_data(url)
     return cattr.structure(data, PemeriksaanVaksinasi)
+
+
+def get_data(
+    url: str = "https://data.covid19.go.id/public/api/data.json",
+) -> Data:
+    cattr.register_structure_hook(date, lambda d, t: parse_datetime(d).date())
+    data = _get_data(url)
+    return cattr.structure(data, Data)
