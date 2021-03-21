@@ -1,11 +1,5 @@
-import attr
-from typing import List
-
-from covid19_id.data import DataKeyDoc
+from . import BaseKasus
 
 
-@attr.dataclass(slots=True)
-class KondisiPenyerta:
-    current_data: int
-    missing_data: float
-    list_data: List[DataKeyDoc]
+class KondisiPenyerta(BaseKasus):
+    pass
