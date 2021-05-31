@@ -7,7 +7,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Mypy](https://img.shields.io/badge/Mypy-enabled-brightgreen)](https://github.com/python/mypy)
 
-Python module for getting data from covid19.go.id
+Python module for getting data from Indonesian government ([covid19.go.id](https://data.covid19.go.id/public/index.html))
 
 [Readme Bahasa Indonesia](https://github.com/hexatester/covid19-id/blob/main/README.id.md)
 

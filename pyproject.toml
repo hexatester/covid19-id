@@ -7,7 +7,7 @@ homepage = "https://github.com/hexatester/covid19-id"
 repository = "https://github.com/hexatester/covid19-id"
 license = "MIT"
 readme = "README.md"
-keywords = ["covid19", "indonesia"]
+keywords = ["covid19", "indonesia", "api", "covid-data"]
 classifiers=[
     "Development Status :: 5 - Production/Stable",
     "License :: OSI Approved :: MIT License",

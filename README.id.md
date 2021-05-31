@@ -7,7 +7,7 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Mypy](https://img.shields.io/badge/Mypy-enabled-brightgreen)](https://github.com/python/mypy)
 
-Modul python untuk mengambil data dari covid19.go.id
+Modul python untuk mengambil data dari pemerintah Indonesia ([covid19.go.id](https://data.covid19.go.id/public/index.html))
 
 ## Install
 
