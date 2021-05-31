@@ -1,29 +1,12 @@
 import cattr
-from typing import Any
-from urllib.request import urlopen, Request
 
-try:
-    import ujson as json
-except ImportError:
-    import json  # type: ignore[no-redef]
-
-from covid19_id.utils import ValueInt, get_headers, register_hooks
+from covid19_id.utils import _get_data, register_hooks
 from . import UpdateCovid19
 from . import DataProvinsi
 from . import PemeriksaanVaksinasi
 from . import Data
 
 register_hooks()
-
-
-def _get_data(url: str, to_json: bool = True) -> Any:
-    data: Any = None
-    req = Request(url=url, headers=get_headers())
-    with urlopen(req) as response:
-        data = response.read()
-    if to_json:
-        return json.loads(data)
-    return data
 
 
 def get_update(
