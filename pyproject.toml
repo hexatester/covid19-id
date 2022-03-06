@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "covid19-id"
-version = "1.0.1"
+version = "1.1.0"
 description = "Python module for getting Indonesian covid19 data from covid19.go.id"
 authors = ["hexatester <hexatester@protonmail.com>"]
 homepage = "https://github.com/hexatester/covid19-id"
