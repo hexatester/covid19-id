@@ -1,5 +1,5 @@
 import attr
-from typing import List
+from typing import List, Optional
 
 from . import JenisKelamin, KelompokUmur, Lokasi, Penambahan
 
@@ -14,5 +14,5 @@ class Provinsi:
     jumlah_dirawat: int
     jenis_kelamin: List[JenisKelamin]
     kelompok_umur: List[KelompokUmur]
-    lokasi: Lokasi
+    lokasi: Optional[Lokasi]
     penambahan: Penambahan
